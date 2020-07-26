@@ -1,4 +1,5 @@
 <?php
+// show_product.php <id>
 require_once "bootstrap.php";
 
 $id = $argv[1];

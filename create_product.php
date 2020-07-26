@@ -1,4 +1,5 @@
 <?php
+// create_product.php <name>
 require_once "bootstrap.php";
 
 $newProductName = $argv[1];
