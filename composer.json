@@ -1,0 +1,17 @@
+{
+    "name": "abdukhaligov/php-test",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Abdukhaligov",
+            "email": "hikmat.pou@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.6.2",
+        "symfony/yaml": "2.*"
+    },
+    "autoload": {
+        "psr-0": {"": "src/"}
+    }
+}
