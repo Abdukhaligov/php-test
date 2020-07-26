@@ -1,10 +1,12 @@
 <?php
 // show_product.php <id>
+use App\Entities\Product;
+
 require_once "bootstrap.php";
 
 $id = $argv[1];
 if (isset($id)) {
-  $product = $entityManager->find('Product', $id);
+  $product = $entityManager->find(Product::class, $id);
 } else {
   echo sprintf("-%s\n", "No ID entered");
   die();

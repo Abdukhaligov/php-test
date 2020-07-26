@@ -1,5 +1,7 @@
 <?php
 // create_user.php
+use App\Entities\User;
+
 require_once "bootstrap.php";
 
 $newUsername = $argv[1];

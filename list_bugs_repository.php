@@ -1,5 +1,7 @@
 <?php
 // list_bugs_repository.php
+use App\Entities\Bug;
+
 require_once "bootstrap.php";
 
 $bugs = $entityManager->getRepository(Bug::class)->getRecentBugs();

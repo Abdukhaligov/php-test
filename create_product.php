@@ -1,5 +1,7 @@
 <?php
 // create_product.php <name>
+use App\Entities\Product;
+
 require_once "bootstrap.php";
 
 $newProductName = $argv[1];

@@ -3,7 +3,7 @@
 require_once "bootstrap.php";
 
 $dql = "SELECT b, e, r, p 
-        FROM Bug b 
+        FROM App\Entities\Bug b 
         JOIN b.engineer e 
         JOIN b.reporter r 
         JOIN b.products p ORDER BY b.created DESC";

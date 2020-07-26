@@ -1,10 +1,12 @@
 <?php
+namespace App\Entities;
 
+use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="BugRepository")
+ * @ORM\Entity(repositoryClass="App\Repositories\BugRepository")
  * @ORM\Table(name="bugs")
  */
 class Bug {

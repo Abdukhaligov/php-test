@@ -1,10 +1,13 @@
 <?php
 // show_bug.php <id>
+use App\Entities\Bug;
+use App\Entities\Product;
+
 require_once "bootstrap.php";
 
 $theBugId = $argv[1];
 
-$bug = $entityManager->find("Bug", (int)$theBugId);
+$bug = $entityManager->find(Bug::class, (int)$theBugId);
 
 /** @var Bug $bug */
 echo "Bug: ".$bug->getDescription()."\n";
